@@ -4,499 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinayak — Computational Materials Researcher</title>
+    <title>Vinayak — Materials Researcher</title>
     <meta name="description"
-        content="Vinayak is a Junior Research Fellow at IIT Kharagpur who bridges computational and experimental materials science through DFT, machine learning, and high-throughput simulations.">
+        content="Vinayak is a computational materials researcher at IIT Kharagpur — bridging DFT, machine learning, and energy materials discovery.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="layout">
-        <!-- ====== LEFT COLUMN: Sticky Header ====== -->
-        <header class="header" id="header">
-            <div class="header__inner">
-                <div class="header__top">
-                    <h1 class="header__name"><a href="/">Vinayak</a></h1>
-                    <h2 class="header__title">Computational Materials Researcher</h2>
-                    <p class="header__subtitle">Junior Research Fellow at <strong>IIT Kharagpur</strong></p>
-                    <p class="header__blurb">I bridge computational and experimental materials science — accelerating
-                        discovery through physics-informed ML and high-throughput DFT.</p>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">V.</a>
+        <div class="nav-links">
+            <a href="#works">Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="assets/Vinayak_CV.pdf" class="nav-cta" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            CV
+        </a>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-line">Vinayak,</span>
+                <span class="hero-line">Computational Materials</span>
+                <span class="hero-line accent">Researcher</span>
+                <span class="hero-line dim">who makes atoms talk.</span>
+            </h1>
+            <p class="hero-sub">JRF @ IIT Kharagpur · DFT · Machine Learning · Energy Materials</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works" class="works">
+        <h2 class="section-label">Cool stuff I've done</h2>
+
+        <div class="works-grid">
+
+            <!-- Project 1 -->
+            <a href="https://github.com/coding-physicist" target="_blank" rel="noopener" class="work-card">
+                <div class="work-visual">
+                    <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+                        <rect width="800" height="500" rx="0" fill="#f0f5ff" />
+                        <rect x="60" y="60" width="300" height="20" rx="10" fill="#c7d6f0" />
+                        <rect x="60" y="100" width="200" height="14" rx="7" fill="#dde6f4" />
+                        <rect x="60" y="130" width="250" height="14" rx="7" fill="#dde6f4" />
+                        <circle cx="600" cy="120" r="70" fill="#e4ecf9" />
+                        <rect x="60" y="200" width="680" height="2" fill="#e8eff8" />
+                        <rect x="60" y="250" width="150" height="150" rx="16" fill="#e4ecf9" />
+                        <rect x="240" y="250" width="150" height="150" rx="16" fill="#dde6f4" />
+                        <rect x="420" y="250" width="150" height="150" rx="16" fill="#e4ecf9" />
+                        <rect x="600" y="250" width="140" height="150" rx="16" fill="#dde6f4" />
+                        <text x="400" y="470" text-anchor="middle" fill="#94a3b8" font-size="16"
+                            font-family="Outfit, sans-serif" font-weight="500">Yokogawa TLS Controller Interface</text>
+                    </svg>
                 </div>
-
-                <nav class="nav" aria-label="In-page navigation">
-                    <ul class="nav__list">
-                        <li><a class="nav__link active" href="#about"><span class="nav__indicator"></span><span
-                                    class="nav__text">About</span></a></li>
-                        <li><a class="nav__link" href="#research"><span class="nav__indicator"></span><span
-                                    class="nav__text">Research</span></a></li>
-                        <li><a class="nav__link" href="#projects"><span class="nav__indicator"></span><span
-                                    class="nav__text">Projects</span></a></li>
-                        <li><a class="nav__link" href="#publications"><span class="nav__indicator"></span><span
-                                    class="nav__text">Publications</span></a></li>
-                        <li><a class="nav__link" href="#education"><span class="nav__indicator"></span><span
-                                    class="nav__text">Education</span></a></li>
-                    </ul>
-                </nav>
-
-                <div class="header__actions">
-                    <a href="assets/Vinayak_CV.pdf" class="btn-cv" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" y1="15" x2="12" y2="3" />
-                        </svg>
-                        Download CV
-                    </a>
+                <div class="work-info">
+                    <div class="work-meta">
+                        <span class="work-type">Lab Instrumentation</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">Yokogawa TLS Controller</h3>
+                    <p class="work-desc">Full-stack desktop app for precision laser source control. Real-time wavelength
+                        tuning, automated sweeps, and live monitoring — built with Python & PyVISA.</p>
+                    <div class="work-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>PyVISA</span>
+                        <span>SCPI</span>
+                    </div>
                 </div>
+            </a>
 
-                <ul class="social" aria-label="Social media">
-                    <li>
-                        <a href="https://github.com/coding-physicist" target="_blank" rel="noopener" aria-label="GitHub"
-                            class="social__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn"
-                            class="social__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:vinayak@iitkgp.ac.in" aria-label="Email" class="social__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect width="20" height="16" x="2" y="4" rx="2" />
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener"
-                            aria-label="Google Scholar" class="social__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <!-- Project 2 -->
+            <a href="https://github.com/coding-physicist" target="_blank" rel="noopener" class="work-card">
+                <div class="work-visual">
+                    <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+                        <rect width="800" height="500" fill="#faf5ff" />
+                        <path d="M100 380 L200 220 L300 280 L400 160 L500 240 L600 120 L700 180" stroke="#a78bfa"
+                            stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M100 380 L200 220 L300 280 L400 160 L500 240 L600 120 L700 180 L700 380 Z"
+                            fill="url(#g1)" opacity="0.2" />
+                        <defs>
+                            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#a78bfa" />
+                                <stop offset="100%" stop-color="#faf5ff" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="200" cy="220" r="8" fill="#7c3aed" />
+                        <circle cx="400" cy="160" r="8" fill="#7c3aed" />
+                        <circle cx="600" cy="120" r="8" fill="#7c3aed" />
+                        <circle cx="700" cy="180" r="8" fill="#7c3aed" />
+                        <text x="400" y="470" text-anchor="middle" fill="#94a3b8" font-size="16"
+                            font-family="Outfit, sans-serif" font-weight="500">Energy Convergence Curves</text>
+                    </svg>
+                </div>
+                <div class="work-info">
+                    <div class="work-meta">
+                        <span class="work-type">Computational Physics</span>
+                        <span class="work-year">2025</span>
+                    </div>
+                    <h3 class="work-title">DFT Convergence Pipeline</h3>
+                    <p class="work-desc">Automated convergence testing for plane-wave cutoffs and k-point grids across
+                        Si, Ge, α-Sn, β-Sn. Parallel job dispatch, energy tracking, and publication-ready convergence
+                        plots.</p>
+                    <div class="work-tags">
+                        <span>Python</span>
+                        <span>Quantum ESPRESSO</span>
+                        <span>ASE</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/coding-physicist" target="_blank" rel="noopener" class="work-card">
+                <div class="work-visual">
+                    <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-svg">
+                        <rect width="800" height="500" fill="#f0fdf4" />
+                        <circle cx="300" cy="200" r="16" fill="#86efac" opacity="0.7" />
+                        <circle cx="400" cy="150" r="12" fill="#4ade80" opacity="0.6" />
+                        <circle cx="500" cy="230" r="20" fill="#86efac" opacity="0.5" />
+                        <circle cx="350" cy="300" r="10" fill="#4ade80" opacity="0.7" />
+                        <circle cx="450" cy="180" r="14" fill="#22c55e" opacity="0.4" />
+                        <circle cx="550" cy="300" r="11" fill="#86efac" opacity="0.6" />
+                        <circle cx="250" cy="280" r="13" fill="#4ade80" opacity="0.5" />
+                        <line x1="300" y1="200" x2="400" y2="150" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="400" y1="150" x2="500" y2="230" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="500" y1="230" x2="350" y2="300" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="350" y1="300" x2="300" y2="200" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="400" y1="150" x2="450" y2="180" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="450" y1="180" x2="500" y2="230" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="250" y1="280" x2="300" y2="200" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="250" y1="280" x2="350" y2="300" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <line x1="550" y1="300" x2="500" y2="230" stroke="#86efac" stroke-width="2.5" opacity="0.6" />
+                        <text x="400" y="470" text-anchor="middle" fill="#94a3b8" font-size="16"
+                            font-family="Outfit, sans-serif" font-weight="500">Crystal Graph Neural Network</text>
+                    </svg>
+                </div>
+                <div class="work-info">
+                    <div class="work-meta">
+                        <span class="work-type">Machine Learning</span>
+                        <span class="work-year">2025</span>
+                    </div>
+                    <h3 class="work-title">GNN Property Predictor</h3>
+                    <p class="work-desc">Graph neural network that predicts electronic and thermal properties of
+                        crystals from structure alone. Trained on Materials Project data — 85% accuracy for
+                        thermoelectric zT, enabling rapid pre-screening.</p>
+                    <div class="work-tags">
+                        <span>PyTorch</span>
+                        <span>PyG</span>
+                        <span>DGL</span>
+                        <span>Materials Project</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2 class="section-label">About Me</h2>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-intro">My name is <strong>Vinayak</strong>.</p>
+                <p>I'm a Junior Research Fellow at <strong>IIT Kharagpur</strong>, working at the intersection of
+                    computational materials science, machine learning, and condensed matter physics.</p>
+                <p>My research bridges computational and experimental materials science — I develop inverse-design
+                    frameworks combining <strong>graph neural networks</strong> and <strong>diffusion models</strong> to
+                    predict structure-property relationships and guide targeted discovery of energy materials.</p>
+                <p>My work spans convergence studies in <strong>Quantum ESPRESSO</strong> and <strong>VASP</strong>,
+                    applying Kolmogorov-Arnold Networks (KANs) to thermoelectric property prediction, and building
+                    ML-accelerated workflows for heterogeneous catalysis. I aim to reduce the materials discovery cycle
+                    from years to weeks.</p>
+                <p>Looking forward, I envision developing physics-constrained generative models that propose novel
+                    crystal structures optimized for specific functional properties — true inverse design where we
+                    specify desired properties and the AI suggests synthesizable materials to match them.</p>
+                <p class="about-cta-text">If you're working on something at the intersection of physics and ML,
+                    <strong>let's talk</strong>.</p>
             </div>
-        </header>
 
-        <!-- ====== RIGHT COLUMN: Scrollable Content ====== -->
-        <main class="content" id="content">
-
-            <!-- About Section -->
-            <section id="about" class="section" aria-label="About me">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">About</h2>
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-value" data-target="3">0</div>
+                    <div class="stat-label">Degrees</div>
                 </div>
-                <div class="section__body">
-                    <p>I'm a Junior Research Fellow at the <strong>Indian Institute of Technology Kharagpur</strong>,
-                        working at the intersection of computational materials science, machine learning, and condensed
-                        matter physics. My research focuses on the optical and electronic properties of functional
-                        materials through <strong>density functional theory (DFT)</strong>, molecular dynamics, and
-                        <strong>machine learning-accelerated discovery workflows</strong>.</p>
-                    <p>With dual Master's degrees and a strong foundation in physics, I specialize in developing
-                        inverse-design frameworks that combine graph neural networks and diffusion models to predict
-                        structure-property relationships. My target application areas include <strong>thermoelectric
-                            materials</strong>, heterogeneous catalysis, energy conversion systems, and ML-accelerated
-                        materials design.</p>
-                    <p>I'm passionate about creating automated computational pipelines that reduce the materials
-                        discovery cycle from years to weeks — bridging the gap between fundamental physics and
-                        real-world energy applications.</p>
+                <div class="stat">
+                    <div class="stat-value" data-target="5">0</div>
+                    <div class="stat-label">Projects</div>
                 </div>
+                <div class="stat">
+                    <div class="stat-value" data-target="2">0</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" data-target="2">0</div>
+                    <div class="stat-label">Years Research</div>
+                </div>
+            </div>
 
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat__value" data-target="3">0</span>
-                        <span class="stat__label">Degrees</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__value" data-target="2">0</span>
-                        <span class="stat__label">Publications</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__value" data-target="5">0</span>
-                        <span class="stat__label">Projects</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__value" data-target="2">0</span>
-                        <span class="stat__label">Years Research</span>
+            <div class="about-skills">
+                <div class="skill-group">
+                    <h3>Computational</h3>
+                    <div class="skill-pills">
+                        <span>Quantum
+                            ESPRESSO</span><span>VASP</span><span>LAMMPS</span><span>ASE</span><span>Pymatgen</span>
                     </div>
                 </div>
-            </section>
-
-            <!-- Research Section -->
-            <section id="research" class="section" aria-label="Research interests">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">Research</h2>
-                </div>
-                <div class="section__body">
-                    <div class="research-philosophy">
-                        <p>My research bridges computational and experimental materials science, focusing on
-                            accelerating materials discovery through physics-informed machine learning and
-                            high-throughput DFT simulations. I specialize in developing inverse-design frameworks that
-                            combine graph neural networks (GNNs) and diffusion models to predict structure-property
-                            relationships and guide targeted discovery of energy materials.</p>
-                        <p>My work spans convergence studies in Quantum ESPRESSO and VASP for electronic structure
-                            calculations, applying Kolmogorov-Arnold Networks (KANs) to thermoelectric property
-                            prediction, and building ML-accelerated workflows for heterogeneous catalysis activation
-                            barrier predictions. I aim to create automated computational pipelines that reduce the
-                            materials discovery cycle from years to weeks, with applications in thermoelectrics,
-                            photovoltaics, and sustainable energy technologies.</p>
-                        <p>Looking forward, I envision developing physics-constrained generative models that can propose
-                            novel crystal structures optimized for specific functional properties — enabling true
-                            inverse design where we specify desired properties and the AI suggests synthesizable
-                            materials to match them.</p>
+                <div class="skill-group">
+                    <h3>Programming</h3>
+                    <div class="skill-pills">
+                        <span>Python</span><span>MATLAB</span><span>Bash</span><span>LaTeX</span><span>Fortran</span>
                     </div>
                 </div>
-
-                <div class="research-areas">
-                    <article class="research-card group">
-                        <div class="research-card__icon">🧮</div>
-                        <div class="research-card__content">
-                            <h3 class="research-card__title">DFT &amp; Electronic Structure</h3>
-                            <p class="research-card__problem">Understanding convergence behavior and electronic
-                                properties across different crystal systems (Si, Ge, α-Sn, β-Sn) to optimize
-                                computational efficiency.</p>
-                            <p class="research-card__method"><strong>Techniques:</strong> Quantum ESPRESSO, VASP,
-                                plane-wave cutoff optimization, k-point mesh convergence, Brillouin zone analysis.</p>
-                            <p class="research-card__impact"><strong>Impact:</strong> Establishes best practices for
-                                high-throughput DFT screening campaigns, reducing computational cost by 30–40%.</p>
-                        </div>
-                    </article>
-
-                    <article class="research-card group">
-                        <div class="research-card__icon">🤖</div>
-                        <div class="research-card__content">
-                            <h3 class="research-card__title">ML-Accelerated Materials Discovery</h3>
-                            <p class="research-card__problem">Predicting activation barriers and reaction energetics in
-                                heterogeneous catalysis faster than traditional DFT methods.</p>
-                            <p class="research-card__method"><strong>Techniques:</strong> Graph Neural Networks (GNNs),
-                                Kolmogorov-Arnold Networks (KANs), diffusion models, inverse-design workflows.</p>
-                            <p class="research-card__impact"><strong>Impact:</strong> Reduces discovery time from months
-                                to days for catalytic materials, enabling rapid screening of thousands of candidates.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="research-card group">
-                        <div class="research-card__icon">⚡</div>
-                        <div class="research-card__content">
-                            <h3 class="research-card__title">Thermoelectric Materials Design</h3>
-                            <p class="research-card__problem">Optimizing figure-of-merit (zT) for thermoelectric
-                                efficiency through computational structure-property prediction.</p>
-                            <p class="research-card__method"><strong>Techniques:</strong> DFT phonon calculations,
-                                Boltzmann transport theory, ML-based property prediction (KANs), high-throughput
-                                screening.</p>
-                            <p class="research-card__impact"><strong>Impact:</strong> Identifies novel thermoelectric
-                                candidates for waste heat recovery and sustainable energy conversion applications.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="section" aria-label="Selected projects">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">Projects</h2>
-                </div>
-
-                <div class="projects-list">
-                    <a class="project group" href="https://github.com/coding-physicist" target="_blank" rel="noopener">
-                        <div class="project__image">
-                            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="320" height="180" fill="#f0f4ff" />
-                                <rect x="30" y="30" width="80" height="8" rx="4" fill="#c5d0e6" />
-                                <rect x="30" y="48" width="120" height="6" rx="3" fill="#dce3f0" />
-                                <rect x="30" y="62" width="100" height="6" rx="3" fill="#dce3f0" />
-                                <circle cx="250" cy="50" r="30" fill="#e8edf7" />
-                                <rect x="30" y="90" width="260" height="1" fill="#e0e6f0" />
-                                <rect x="30" y="110" width="40" height="40" rx="6" fill="#e0e7f5" />
-                                <rect x="80" y="110" width="40" height="40" rx="6" fill="#dce3f0" />
-                                <rect x="130" y="110" width="40" height="40" rx="6" fill="#e0e7f5" />
-                                <rect x="180" y="110" width="40" height="40" rx="6" fill="#dce3f0" />
-                            </svg>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">
-                                Yokogawa TLS Controller
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="project__arrow">
-                                    <path d="M7 17L17 7" />
-                                    <path d="M7 7h10v10" />
-                                </svg>
-                            </h3>
-                            <p class="project__description">Full-stack desktop application for precision control of
-                                Yokogawa AQ2200 Tunable Laser Source modules over LAN. Features real-time
-                                wavelength/frequency tuning, automated sweep operations with configurable dwell time,
-                                and a modern Tkinter GUI with live status monitoring.</p>
-                            <ul class="tags" aria-label="Technologies used">
-                                <li class="tag">Python</li>
-                                <li class="tag">Tkinter</li>
-                                <li class="tag">PyVISA</li>
-                                <li class="tag">SCPI</li>
-                                <li class="tag">TCP/IP</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <a class="project group" href="https://github.com/coding-physicist" target="_blank" rel="noopener">
-                        <div class="project__image">
-                            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="320" height="180" fill="#f5f0ff" />
-                                <path d="M40 140 L80 80 L120 100 L160 60 L200 90 L240 50 L280 70" stroke="#a78bfa"
-                                    stroke-width="2.5" fill="none" stroke-linecap="round" />
-                                <path d="M40 140 L80 80 L120 100 L160 60 L200 90 L240 50 L280 70 L280 140 Z"
-                                    fill="url(#grad-conv)" opacity="0.15" />
-                                <defs>
-                                    <linearGradient id="grad-conv" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#a78bfa" />
-                                        <stop offset="100%" stop-color="#f5f0ff" />
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="80" cy="80" r="4" fill="#7c3aed" />
-                                <circle cx="160" cy="60" r="4" fill="#7c3aed" />
-                                <circle cx="240" cy="50" r="4" fill="#7c3aed" />
-                            </svg>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">
-                                DFT Convergence Study Pipeline
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="project__arrow">
-                                    <path d="M7 17L17 7" />
-                                    <path d="M7 7h10v10" />
-                                </svg>
-                            </h3>
-                            <p class="project__description">Automated framework for systematic convergence testing of
-                                plane-wave cutoff (ecutwfc) and k-point sampling across multiple crystal systems (Si,
-                                Ge, α-Sn, β-Sn). Features parallel job submission, energy convergence tracking, and
-                                automated visualization of convergence curves for optimal parameter selection.</p>
-                            <ul class="tags" aria-label="Technologies used">
-                                <li class="tag">Python</li>
-                                <li class="tag">Quantum ESPRESSO</li>
-                                <li class="tag">ASE</li>
-                                <li class="tag">Matplotlib</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <a class="project group" href="https://github.com/coding-physicist" target="_blank" rel="noopener">
-                        <div class="project__image">
-                            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="320" height="180" fill="#f0fdf4" />
-                                <circle cx="120" cy="90" r="8" fill="#86efac" opacity="0.6" />
-                                <circle cx="160" cy="70" r="6" fill="#4ade80" opacity="0.5" />
-                                <circle cx="200" cy="100" r="10" fill="#86efac" opacity="0.4" />
-                                <circle cx="140" cy="120" r="5" fill="#4ade80" opacity="0.6" />
-                                <circle cx="180" cy="80" r="7" fill="#22c55e" opacity="0.3" />
-                                <line x1="120" y1="90" x2="160" y2="70" stroke="#86efac" stroke-width="1.5"
-                                    opacity="0.5" />
-                                <line x1="160" y1="70" x2="200" y2="100" stroke="#86efac" stroke-width="1.5"
-                                    opacity="0.5" />
-                                <line x1="200" y1="100" x2="140" y2="120" stroke="#86efac" stroke-width="1.5"
-                                    opacity="0.5" />
-                                <line x1="140" y1="120" x2="120" y2="90" stroke="#86efac" stroke-width="1.5"
-                                    opacity="0.5" />
-                                <line x1="160" y1="70" x2="180" y2="80" stroke="#86efac" stroke-width="1.5"
-                                    opacity="0.5" />
-                                <text x="160" y="160" text-anchor="middle" fill="#64748b" font-size="11"
-                                    font-family="Inter, sans-serif">Graph Neural Network</text>
-                            </svg>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">
-                                GNN-Based Property Predictor
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="project__arrow">
-                                    <path d="M7 17L17 7" />
-                                    <path d="M7 7h10v10" />
-                                </svg>
-                            </h3>
-                            <p class="project__description">Graph neural network architecture for predicting electronic
-                                and thermal properties of crystalline materials from structure alone. Trained on
-                                Materials Project dataset with transfer learning for thermoelectric figure-of-merit (zT)
-                                prediction. Achieves 85% accuracy on hold-out test set, enabling rapid pre-screening
-                                before DFT calculations.</p>
-                            <ul class="tags" aria-label="Technologies used">
-                                <li class="tag">PyTorch</li>
-                                <li class="tag">PyG</li>
-                                <li class="tag">DGL</li>
-                                <li class="tag">Materials Project API</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="section__more">
-                    <a href="https://github.com/coding-physicist" target="_blank" rel="noopener" class="link-arrow">
-                        View All Projects
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14" />
-                            <path d="m12 5 7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Publications Section -->
-            <section id="publications" class="section" aria-label="Publications">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">Publications</h2>
-                </div>
-
-                <div class="publications-list">
-                    <div class="publication-note">
-                        <p><em>Publications in preparation. Check back soon for updates on submitted manuscripts.</em>
-                        </p>
+                <div class="skill-group">
+                    <h3>ML / Data</h3>
+                    <div class="skill-pills">
+                        <span>PyTorch</span><span>PyG</span><span>scikit-learn</span><span>NumPy</span><span>Pandas</span>
                     </div>
                 </div>
-
-                <div class="profiles">
-                    <span class="profiles__label">Academic Profiles:</span>
-                    <a href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener"
-                        class="profiles__link">Google Scholar</a>
-                    <span class="profiles__divider">·</span>
-                    <a href="https://orcid.org/" target="_blank" rel="noopener" class="profiles__link">ORCID</a>
-                    <span class="profiles__divider">·</span>
-                    <a href="https://www.researchgate.net/" target="_blank" rel="noopener"
-                        class="profiles__link">ResearchGate</a>
-                </div>
-            </section>
-
-            <!-- Education Section -->
-            <section id="education" class="section" aria-label="Education">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">Education</h2>
-                </div>
-
-                <div class="education-list">
-                    <div class="education-item group">
-                        <div class="education-item__date">2024 — Present</div>
-                        <div class="education-item__content">
-                            <h3 class="education-item__title">Junior Research Fellow</h3>
-                            <p class="education-item__org">Indian Institute of Technology Kharagpur</p>
-                            <p class="education-item__detail">Department of Physics · Computational Materials Science
-                                Lab</p>
-                            <p class="education-item__description">Research focus on DFT simulations, ML-accelerated
-                                materials discovery, and thermoelectric property prediction using GNNs and KANs.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-item group">
-                        <div class="education-item__date">2022 — 2024</div>
-                        <div class="education-item__content">
-                            <h3 class="education-item__title">M.Sc. Physics</h3>
-                            <p class="education-item__org">Institution Name</p>
-                            <p class="education-item__detail">Specialization in Condensed Matter Physics</p>
-                            <ul class="tags" aria-label="Key courses">
-                                <li class="tag">Quantum Mechanics</li>
-                                <li class="tag">Solid State Physics</li>
-                                <li class="tag">Computational Methods</li>
-                                <li class="tag">Statistical Mechanics</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-item group">
-                        <div class="education-item__date">2019 — 2022</div>
-                        <div class="education-item__content">
-                            <h3 class="education-item__title">B.Sc. Physics</h3>
-                            <p class="education-item__org">Institution Name</p>
-                            <p class="education-item__detail">Honours in Physics</p>
-                            <ul class="tags" aria-label="Key courses">
-                                <li class="tag">Classical Mechanics</li>
-                                <li class="tag">Electrodynamics</li>
-                                <li class="tag">Mathematical Physics</li>
-                                <li class="tag">Optics</li>
-                            </ul>
-                        </div>
+                <div class="skill-group">
+                    <h3>Experimental</h3>
+                    <div class="skill-pills">
+                        <span>Laser
+                            Sources</span><span>Spectroscopy</span><span>XRD</span><span>SEM</span><span>Raman</span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Skills Section -->
-            <section id="skills" class="section" aria-label="Technical skills">
-                <div class="section__sticky-header">
-                    <h2 class="section__heading">Skills</h2>
-                </div>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Let's connect.</h2>
+        <p class="contact-sub">The best way to reach me is email:</p>
 
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Computational Tools</h3>
-                        <ul class="tags">
-                            <li class="tag">Quantum ESPRESSO</li>
-                            <li class="tag">VASP</li>
-                            <li class="tag">LAMMPS</li>
-                            <li class="tag">ASE</li>
-                            <li class="tag">Pymatgen</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Programming</h3>
-                        <ul class="tags">
-                            <li class="tag">Python</li>
-                            <li class="tag">MATLAB</li>
-                            <li class="tag">Bash</li>
-                            <li class="tag">LaTeX</li>
-                            <li class="tag">Fortran</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">ML / Data Science</h3>
-                        <ul class="tags">
-                            <li class="tag">PyTorch</li>
-                            <li class="tag">PyG</li>
-                            <li class="tag">scikit-learn</li>
-                            <li class="tag">NumPy</li>
-                            <li class="tag">Pandas</li>
-                            <li class="tag">Matplotlib</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Experimental</h3>
-                        <ul class="tags">
-                            <li class="tag">Tunable Laser Sources</li>
-                            <li class="tag">Optical Spectroscopy</li>
-                            <li class="tag">XRD</li>
-                            <li class="tag">SEM</li>
-                            <li class="tag">Raman Spectroscopy</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+        <button class="email-btn" id="copy-email" data-email="vinayak@iitkgp.ac.in">
+            <span class="email-text">vinayak@iitkgp.ac.in</span>
+            <span class="email-copied">Copied!</span>
+        </button>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <p>Loosely designed in <a href="https://figma.com" target="_blank" rel="noopener">Figma</a> and coded in
-                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a>. Built with
-                    vanilla HTML, CSS &amp; JavaScript. Deployed on <a href="https://pages.github.com/" target="_blank"
-                        rel="noopener">GitHub Pages</a>. All text is set in the <a href="https://rsms.me/inter/"
-                        target="_blank" rel="noopener">Inter</a> typeface.</p>
-            </footer>
-        </main>
-    </div>
+        <div class="contact-socials">
+            <a href="https://github.com/coding-physicist" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener">Scholar</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed & built by Vinayak · 2026</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
